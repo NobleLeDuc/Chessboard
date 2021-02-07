@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  padding: 40px;
+}
+table {
+  margin: auto;
+  background: tan;
+  border: 1px solid black;
+}
+th
+{
+  padding: .1em;
+  font-size: 10px;
+  background-color: #BDA27E;
+}
+td {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  font-size: 60px;
+  text-align: center;
+}
+tr{
+  background-color: tan;
+}
+th{
+  background-color: tan;
+}
+tr:nth-of-type(odd) td:nth-of-type(even){
+	background-color: chocolate;
+}
+
+tr:nth-of-type(even) td:nth-of-type(odd){
+	background-color: chocolate;
+}
+h1{
+  text-align: center;
+}
+</style>
+<title>Chess Board</title>
+</head>
+<body>
+  <h1>CINS 465: Assignment 1 by Noble LeDuc</h1>
+  <table>
+      <tr>
+        <th>8</th>
+        <td>&#9820;</td>
+        <td>&#9822;</td>
+        <td>&#9821;</td>
+        <td>&#9819;</td>
+        <td>&#9818;</td>
+        <td>&#9821;</td>
+        <td>&#9822;</td>
+        <td>&#9820;</td>
+      </tr>
+      <tr>
+        <th>7</th>
+        <td>&#9823;</td>
+        <td>&#9823;</td>
+        <td>&#9823;</td>
+        <td>&#9823;</td>
+        <td>&#9823;</td>
+        <td>&#9823;</td>
+        <td>&#9823;</td>
+        <td>&#9823;</td>
+      </tr>
+      <tr>
+        <th>6</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>&#9817;</td>
+        <td>&#9817;</td>
+        <td>&#9817;</td>
+        <td>&#9817;</td>
+        <td>&#9817;</td>
+        <td>&#9817;</td>
+        <td>&#9817;</td>
+        <td>&#9817;</td>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>&#9814;</td>
+        <td>&#9816;</td>
+        <td>&#9815;</td>
+        <td>&#9813;</td>
+        <td>&#9812;</td>
+        <td>&#9815;</td>
+        <td>&#9816;</td>
+        <td>&#9814;</td>
+      </tr>
+      <tr>
+        <th></th>
+        <th>a</th>
+        <th>b</th>
+        <th>c</th>
+        <th>d</th>
+        <th>e</th>
+        <th>f</th>
+        <th>g</th>
+        <th>h</th>
+      </tr>
+</table>
+<h2>History of Chess</h2>
+<p>The game of Chess has been around for more than 1500 years.
+The origins are still unknown, However, the earliest players can
+be traced back to 7th century India. From there it was introduced to Persia.
+In Persia, chess was primarily played by nobility. Persia contributed several factors
+to the game, including the phrases "Shah"(Persian for "King") and "Shah Mat"(
+Persian for "the King is helpless" or checkmate). After Persia was
+conquered during an islamic conquest, Chess was introduced to the Muslim world. From There
+Chess spread throughout Europe and eventually the entire globe.</p>
+<h2>Chess pieces</h2>
+<ul>
+  <li>Rook   &#9814;: The Rook can move any amount of space both vertically and
+  horizontally.</li>
+  <li>Knight &#9816;: The Knight can move in an L shape(1 space to the right/left then 2 spaces
+  down/up)</li>
+  <li>Bishop &#9815;: The Bishop can move diagonally on the board in any direction.</li>
+  <li>Queen  &#9813;: The Queen, the most versatile of the pieces, can move vertically, horizontally
+  diagonally in any direction.</li>
+  <li>King   &#9812;: The king can move one space in any direction, the objective of the game is to capture
+   the opponents king.</li>
+  <li>Pawn   &#9817;: The pawn is capable of moving one space forward, unless its the pawns first move, then
+  it can move two spaces forward.</li>
+</ul>
+<h3>Assignment 1 steps:</h3>
+<ol>
+  <li>Setting up the html file with a body, table and style section.</li>
+  <li>Creating the numbered and lettered boarder within the table using "tr" for rows and
+  "th" to create the headers within the rows</li>
+  <li>Creating more rows using "tr" and inserting cells("td") to represent the spaces on the board </li>
+  <li>Then I began styling the header cells and the board cells. To make the board cells alternate
+   colors, I used the "nth-of-type" command.</li>
+   <li>After styling the table I created a paragaph down below, briefly detailing the history of chess.
+    I did this using the "p" tag.</li>
+   <li>Below that I created a bulleted list using "ul" and "li", detailing the basic functionalities of
+   the chess pieces.</li>
+</ol>
+</body>
+</html>
